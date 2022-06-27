@@ -16,19 +16,6 @@ app.listen(port, () => {
 
 });
 
-//const mongoClient = require('mongodb').MongoClient;
-
-//let collection;
-//let db;
-
-
-//mongoClient.connect('mongodb://localhost/ssdb', {userNewUrlParser: true, userUnifiedTopology: true},(err, client => {
-  //if(err) throw err;
-  //console.log('Connected to Database');
-  //db = client.db('ssdb');
-  //collection = db.collection('product');
-//}));
-
 const mysql = require('mysql');
 
 conn = mysql.createConnection({

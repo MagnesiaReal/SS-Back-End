@@ -18,10 +18,15 @@ let timerId = null;
 let timerIdPass = null;
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'Yahoo',
+  //auth: {
+    //user: 'serviciosocial.encb2022@gmail.com',
+    //pass: 'serviciosocialENCB2022'
+  //}
+  secure: false,
   auth: {
-    user: 'servicio.social.encb2022@gmail.com',
-    pass: 'serviciosocialENCB2022'
+    user: 'stea.tesis@yahoo.com',
+    pass: 'xkehiqvllytqwxvl'
   }
 });
 
@@ -90,7 +95,7 @@ function sendRecoverPassMail(req, res) {
   console.log(recoveryUrl);  
 
   const mailOptions = {
-    from: 'servicio.social.encb2022@gmail.com',
+    from: 'stea.tesis@yahoo.com',
     to: req.body.email,
     subject: 'ENCB Recover password',
     html: `<h1>Este enlace expirara en 30 minutos !!!!!!</h1><br/> Url de recuperación: ${recoveryUrl}`
@@ -236,7 +241,7 @@ function sendVerificationMail(req, res) {
   
 
   const mailOptions = {
-    from: 'servicio.social.encb2022@gmail.com',
+    from: 'stea.tesis@yahoo.com',
     to: req.body.email,
     subject: 'SSENCB Verification mail',
     text: mailtext

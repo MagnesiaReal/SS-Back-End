@@ -111,3 +111,100 @@ Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more a
 04:27:37.972 WARN  LOGIN>> Extracted data -> {"userId":1,"name":"Tony","birth":"2022-01-01T06:00:00.000Z","admin":0,"uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay"} 
 04:27:38.069 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
 04:27:38.069 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+17:30:15.143 INFO  LOGIN>> checking credentials 
+17:30:15.149 WARN  LOGIN>> Extracted data -> {"userId":1,"name":"Tony","birth":"2022-01-01T06:00:00.000Z","admin":0,"uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay"} 
+17:30:15.220 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+17:30:15.221 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+17:37:15.243 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+17:37:15.244 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+15:32:34.815 INFO  REGISTER>> registering user 
+15:32:34.823 INFO  REGISTER>> data.length: 1 
+15:32:34.823 WARN  REGISTER>> Email already exist: toro0hack@gmail.com 
+15:32:43.970 INFO  REGISTER>> registering user 
+15:32:43.971 INFO  REGISTER>> data.length:  
+15:32:44.253 ERROR REGISTER>> error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials e19-20020a05680809b300b0032efb577cbasm4400991oig.8 - gsmtp
+{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials e19-20020a05680809b300b0032efb577cbasm4400991oig.8 - gsmtp","responseCode":535,"command":"AUTH PLAIN"}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials e19-20020a05680809b300b0032efb577cbasm4400991oig.8 - gsmtp
+    at SMTPConnection._formatError (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:1536:34)
+    at SMTPConnection.<anonymous> (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+    at SMTPConnection._processResponse (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:947:20)
+    at SMTPConnection._onData (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) 
+15:33:42.871 INFO  REGISTER>> registering user 
+15:33:42.875 INFO  REGISTER>> data.length:  
+15:33:44.540 ERROR REGISTER>> error: Mail command failed: 550 Request failed; Mailbox unavailable
+{"code":"EENVELOPE","response":"550 Request failed; Mailbox unavailable","responseCode":550,"command":"MAIL FROM"}
+Error: Mail command failed: 550 Request failed; Mailbox unavailable
+    at SMTPConnection._formatError (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:784:19)
+    at SMTPConnection._actionMAIL (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:1566:34)
+    at SMTPConnection.<anonymous> (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:1041:18)
+    at SMTPConnection._processResponse (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:947:20)
+    at SMTPConnection._onData (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) 
+15:34:33.559 INFO  REGISTER>> registering user 
+15:34:33.562 INFO  REGISTER>> data.length:  
+15:34:35.785 ERROR REGISTER>> error: Mail command failed: 550 Request failed; Mailbox unavailable
+{"code":"EENVELOPE","response":"550 Request failed; Mailbox unavailable","responseCode":550,"command":"MAIL FROM"}
+Error: Mail command failed: 550 Request failed; Mailbox unavailable
+    at SMTPConnection._formatError (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:784:19)
+    at SMTPConnection._actionMAIL (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:1566:34)
+    at SMTPConnection.<anonymous> (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:1041:18)
+    at SMTPConnection._processResponse (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:947:20)
+    at SMTPConnection._onData (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) 
+15:36:03.596 INFO  REGISTER>> registering user 
+15:36:03.600 INFO  REGISTER>> data.length:  
+15:36:11.284 INFO  REGISTER>> registering user 
+15:36:11.285 INFO  REGISTER>> data.length:  
+15:36:15.617 INFO  REGGISTER>> Email sent: 250 OK , completed 
+15:36:15.617 INFO  REGISTER>> User has thirty minuts to verify him account 
+15:38:03.716 ERROR REGISTER>> error: Connection timeout
+{"code":"ETIMEDOUT","command":"CONN"}
+Error: Connection timeout
+    at SMTPConnection._formatError (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:784:19)
+    at SMTPConnection._onError (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:770:20)
+    at Timeout.<anonymous> (/home/magneciareal/Desktop/ServicioSocial/SS-Back-End/node_modules/nodemailer/lib/smtp-connection/index.js:229:22)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7) 
+16:25:53.647 INFO  REGISTER>> registering user 
+16:25:53.648 INFO  REGISTER>> data.length:  
+16:25:58.292 INFO  REGGISTER>> Email sent: 250 OK , completed 
+16:25:58.292 INFO  REGISTER>> User has thirty minuts to verify him account 
+16:38:00.075 WARN  VERIFY>> hmmm... user sent a wrong code or time expired 
+16:38:07.768 WARN  VERIFY>> hmmm... user sent a wrong code or time expired 
+16:38:08.326 WARN  VERIFY>> hmmm... user sent a wrong code or time expired 
+16:38:45.326 INFO  REGISTER>> registering user 
+16:38:45.327 INFO  REGISTER>> data.length:  
+16:38:49.210 INFO  REGGISTER>> Email sent: 250 OK , completed 
+16:38:49.210 INFO  REGISTER>> User has thirty minuts to verify him account 
+16:39:10.348 INFO  VERIFY>> Verified account succesfully 
+16:39:10.401 INFO  VERIFY>> Server send a success response 
+16:39:18.433 INFO  CHECKSESSION>> UUID: aa01939b-454d-4068-8142-1636b8104c5e 
+16:39:18.434 INFO  CHECKSESSION>> recovered data: [{"user_id":2,"name":"Tony","email":"tony_garrido1442@hotmail.com","birth":"1999-05-09T05:00:00.000Z","pass":"$2b$10$u1XIiW90qrf5RH20rZbm4e5IDnQt.vIYN7ffjEpfitCHg3iMLp7pC","uuid":"aa01939b-454d-4068-8142-1636b8104c5e","admin":0}] 
+23:45:59.192 INFO  LOGIN>> checking credentials 
+23:45:59.197 WARN  LOGIN>> Extracted data -> {"userId":1,"name":"Tony","birth":"2022-01-01T06:00:00.000Z","admin":0,"uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay"} 
+23:45:59.265 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+23:45:59.267 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+23:49:02.199 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+23:49:02.200 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+23:49:03.180 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+23:49:03.181 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+00:00:43.248 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+00:00:43.249 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
+00:01:16.880 INFO  CHECKSESSION>> UUID: 6bf26cfa-3116-4002-95de-64a0c8e47533 
+00:01:16.881 INFO  CHECKSESSION>> recovered data: [{"user_id":1,"name":"Tony","email":"toro0hack@gmail.com","birth":"2022-01-01T06:00:00.000Z","pass":"$2b$10$Z6NvoNXP/k9gBif4uVQ78uzF1AaXvPalO19vIkeXOqkmkACsodbay","uuid":"6bf26cfa-3116-4002-95de-64a0c8e47533","admin":0}] 
